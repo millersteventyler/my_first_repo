@@ -5,25 +5,23 @@ function randomDestination(place){
 }
 
 let destination = ['Michigan', 'South Carolina', 'Texas', 'California', 'Kentucky'];
-console.log(randomDestination(destination));
 
 function randomRestaurant(food){
     return food[Math.floor(Math.random()*food.length)];
 }
 
 let restaurant = ["McDonald's", "Wendy's", "Taco Bell", "Subway", "Arby's"];
-console.log(randomRestaurant(restaurant));
 
 function randomTransportation(vehicle){
     return vehicle[Math.floor(Math.random()*vehicle.length)];
 }
 
 let transportation = ['Car', 'Train', 'Helicopter', 'Jet Ski', 'Lamborfeeties'];
-console.log(randomTransportation(transportation));
 
 function randomEntertainment(activity){
     return activity[Math.floor(Math.random()*activity.length)];
 }
 
 let entertainment = ['Movie', 'Magic Show', 'Sporting event', 'Casino', 'Concert'];
-console.log(randomEntertainment(entertainment));
+
+console.log("Congratulations! You have recieved your random day trip. You will travel to " + randomRestaurant(restaurant) + " in " + randomDestination(destination) + " by " + randomTransportation(transportation) + " and finally go to a " + randomEntertainment(entertainment));
