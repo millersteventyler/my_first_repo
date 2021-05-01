@@ -21,5 +21,9 @@ function randomTransportation(vehicle){
 let transportation = ['Car', 'Train', 'Helicopter', 'Jet Ski', 'Lamborfeeties'];
 console.log(randomTransportation(transportation));
 
+function randomEntertainment(activity){
+    return activity[Math.floor(Math.random()*activity.length)];
+}
 
-let entertainment = ['Movie', 'Magic Show', 'Sporting event', 'Casino', 'Concert']
+let entertainment = ['Movie', 'Magic Show', 'Sporting event', 'Casino', 'Concert'];
+console.log(randomEntertainment(entertainment));
