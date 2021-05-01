@@ -14,8 +14,12 @@ function randomRestaurant(food){
 let restaurant = ["McDonald's", "Wendy's", "Taco Bell", "Subway", "Arby's"];
 console.log(randomRestaurant(restaurant));
 
-
-
+function randomTransportation(vehicle){
+    return vehicle[Math.floor(Math.random()*vehicle.length)];
+}
 
 let transportation = ['Car', 'Train', 'Helicopter', 'Jet Ski', 'Lamborfeeties'];
+console.log(randomTransportation(transportation));
+
+
 let entertainment = ['Movie', 'Magic Show', 'Sporting event', 'Casino', 'Concert']
