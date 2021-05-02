@@ -28,21 +28,21 @@ console.log("Congratulations! You have recieved your random day trip. You will t
 
 let confirm = prompt("If you like your day trip input: confirm, if you would like to try again, input: change");
 
-if(confirm == "confirm"){
-    console.log("Day trip confirmed!");
+if(confirm == "confirm"){   //confirms trip
+    console.log("Day trip confirmed!"); 
 }
-else if(confirm == "change" ){
+else if(confirm == "change" ){  //will reload web page
     while (confirm == "change"){        
         if(true){
-            location.reload();            
+            location.reload();           
             break;
         }
         
     }
     
 }
-else if(confirm !== "confirm" && confirm !== "change"){
-    console.log("Sorry we did't get that");
+else if(confirm !== "confirm" && confirm !== "change"){ //if typo entered 2x in a row, day trip generator will stop and post to console what has happened
+    console.log("Sorry we didn't get that");
     confirm = prompt("If you like your day trip input: confirm, if you would like to try again, input: change");
     if(confirm == "confirm"){
         console.log("Day trip confirmed!");
